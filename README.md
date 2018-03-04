@@ -435,3 +435,47 @@ int main()
 
 	return 0;
 }
+
+20.#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d %d %d",&a,&b,&c);
+	
+	int max=0;
+	
+	if(a>b){
+		if(a>c){
+			max=a;
+		}else{
+			max=c;
+		}
+	}else{
+		if(b>c){
+			max=b;
+		}else{
+			max=c;
+		}
+	}
+	
+	printf("The max is %d\n",max);
+}
+
+21.#include <stdio.h>
+int main()
+{
+	const int READY=24;
+	int code=0;
+	int count=0;
+	
+	scanf("%d %d",&code,&count);
+	if(code == READY){
+		if(count<20)
+		printf("一切正常\n");
+	}else{
+		printf("继续等待\n"); 
+	}
+	return 0;
+}
+
+
